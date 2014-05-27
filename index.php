@@ -9,11 +9,11 @@ nuestra alplicacion*/
 
 //Llamar a los controladores indicados
 
-if(empty($_GET['url']))
+/*if(empty($_GET['url']))
 {
 	$_GET['url'] = 'home';
 }
-
+*/
 controller($_GET['url']);
 
 //index.php
