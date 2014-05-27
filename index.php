@@ -7,12 +7,18 @@ nuestra alplicacion*/
 	require 'helpers.php';
 
 
-//Llamar a los controladores individuales
+//Llamar a los controladores indicados
 
+if(empty($_GET['url']))
+{
+	$_GET['url'] = 'home';
+}
+
+controller($_GET['url']);
 
 //index.php
 
-	if(empty($_GET['url']))
+	/*if(empty($_GET['url']))//comparar vacio
 	{
 		require "controllers/home.php";
 	}
@@ -21,12 +27,12 @@ nuestra alplicacion*/
 	{
 		require "controllers/contactos.php";
 	}
-//index.php?url=asasasa
+	//index.php?url=asasasa
 	else
 	{
 		header("HTTP/1.0 404 Not Found");
 		exit("Pagina no Encontrada");
 	}
-
+*/
 
 //var_dump($_GET);VER EL CONTENIDO DE UNA VARIABLE
